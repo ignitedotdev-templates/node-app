@@ -5,7 +5,6 @@ const express = require("express");
 const app = express();
 
 // Sample book data
-
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
@@ -16,6 +15,7 @@ app.get("/books", (req, res) => {
 });
 
 // Start the server
-app.listen(process.env.PORT, () => {
-  console.log(`Server is running on port ${process.env.PORT}`);
+const port = process.env.PORT
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

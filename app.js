@@ -6,7 +6,7 @@ const app = express();
 
 // Sample book data
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send(`Hello World, This is a node app ${time.now()}`);
 });
 
 // Books endpoint
